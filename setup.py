@@ -46,8 +46,8 @@ EXTS.extend([x.upper() for x in EXTS])
 EXAMPLES=list(product(EXAMPLES,EXTS))
 package_data=[ "examples/"+x[0]+"/*."+x[1] for x in EXAMPLES]
 print(package_data)
-NAME=os.environ["name"]
-VERSION=os.environ["version"]
+NAME=os.environ.get("name", "SWMM5")
+VERSION=os.environ.get("version", "1.1.0.3")
 KEYWORDS=["Hydraulics", "Hydrology", "Urban Drainage", "Sewerage", "Water Engineering", "Numerical Methods","Computer Model","Environmental Science", "Engineering", "Science"]
 
 
