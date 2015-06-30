@@ -38,9 +38,9 @@
 #ifdef WINDOWS
 #include <windows.h>
 #include <excpt.h>
+#include <direct.h>
 #endif
 
-#include <direct.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
